@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">quizowanie</string>
+    <string name="Nazwa">Zapytanko</string>
+    <string name="BTlogowania">Zaloguj się</string>
+    <string name="BTtworzenia">Utwórz konto</string>
+    <string name="login">Login</string>
+    <string name="Haslo">Hasło</string>
+    <string name="Email">E-mail</string>
+</resources>
