@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "184565762979",
+    "firebase_url": "https://quizowaniee.firebaseio.com",
+    "project_id": "quizowaniee",
+    "storage_bucket": "quizowaniee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184565762979:android:eac4e5f619277b40ade816",
+        "android_client_info": {
+          "package_name": "com.example.quizowanie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184565762979-i7rmk6av23ftojamnvmj1ul4v7ectf3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quizowanie",
+            "certificate_hash": "f9f7d1ac73ce2875ad2d4afde8f4b9623666e69e"
+          }
+        },
+        {
+          "client_id": "184565762979-gkfjhtbqqembhrrsdcv0lm3gfqhcm3k3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbeRnAYHffFNH-yHZ9Xy_xheVJo-IduhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184565762979-gkfjhtbqqembhrrsdcv0lm3gfqhcm3k3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
