@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".panel_tworzenia"></activity>
-        <activity android:name=".panel_logowania" />
         <activity android:name=".panel_glowny" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -19,10 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".MainQuiz"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DrugiQuiz"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TrzeciQuiz"
+            android:screenOrientation="portrait"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
+

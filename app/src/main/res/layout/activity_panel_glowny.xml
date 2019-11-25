@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nazwa" />
 
     <TextView
-        android:id="@+id/Text_Ilosc_pkt"
+        android:id="@+id/highscore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -62,44 +62,34 @@
         app:layout_constraintTop_toBottomOf="@+id/nazwa" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/pierwszyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:text="Matematyka"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textKategorie" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/drugiButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="64dp"
-        android:text="Button"
+        android:layout_marginEnd="56dp"
+        android:text="Historia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textKategorie" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/trzeciButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:text="Pytania sprawdzające"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="64dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/pierwszyButton" />
 
     <TextView
         android:id="@+id/NazwaUz"
@@ -116,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/Text_Ilosc_pkt"
+        app:layout_constraintStart_toEndOf="@+id/highscore"
         app:layout_constraintTop_toBottomOf="@+id/NazwaUz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
