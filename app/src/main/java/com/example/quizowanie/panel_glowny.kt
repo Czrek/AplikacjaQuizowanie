@@ -1,20 +1,40 @@
 package com.example.quizowanie
 
+import android.annotation.SuppressLint
 import android.app.Activity
-import android.content.Context
-import android.content.Intent
+import android.app.AlertDialog
+import android.app.Dialog
+
+import android.bluetooth.BluetoothAdapter
+import android.bluetooth.BluetoothDevice
+import android.bluetooth.BluetoothServerSocket
+import android.bluetooth.BluetoothSocket
+import android.content.*
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import android.widget.Toast
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.*
+import android.widget.Toast.LENGTH_LONG
+import androidx.fragment.app.DialogFragment
+import kotlinx.android.synthetic.main.activity_panel_tworzenia.*
+import java.io.IOException
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
 
 class panel_glowny : AppCompatActivity() {
 
     private var txtHighScore: TextView? = null
     private var mhighscore: Int = 0
     private var allscore: Int = 0
+
+
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,12 +43,20 @@ class panel_glowny : AppCompatActivity() {
 
         txtHighScore = this.findViewById(R.id.highscore)
         loadHighScore()
-
+        val bt = findViewById<Button>(R.id.BTbutton)
+        bt.setOnClickListener {
+            startActivityForResult(
+                Intent(
+                    applicationContext,
+                    bluetoothh::class.java
+                ), REQUEST_CODE
+            )
+        }
         val startQuiz = findViewById<Button>(R.id.pierwszyButton)
         startQuiz.setOnClickListener {
             startActivityForResult(Intent(applicationContext, MainQuiz::class.java), REQUEST_CODE)
         }
-      /*  if (allscore > 76) {
+        /*  if (allscore > 76) {
             val startQuiz2 = findViewById<Button>(R.id.drugiButton)
             startQuiz2.setOnClickListener {
                 startActivityForResult(
@@ -49,8 +77,9 @@ class panel_glowny : AppCompatActivity() {
 
         }
 */
-    }
 
+
+    }
 
     override fun onStart() {
         super.onStart()
@@ -88,11 +117,7 @@ class panel_glowny : AppCompatActivity() {
         } else {
             val startQuiz3 = findViewById<Button>(R.id.trzeciButton)
             startQuiz3.setOnClickListener {
-                Toast.makeText(
-                    this,
-                    "Masz za mało punktów żeby otworzyć tą kategorie\n-Potrzeba 180 pkt",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(this,"Masz za mało punktów żeby otworzyć tą kategorie\n-Potrzeba 180 pkt",Toast.LENGTH_SHORT).show()
             }
 
         }
@@ -147,5 +172,12 @@ class panel_glowny : AppCompatActivity() {
         val PREFS = "shared_prefs"
         val HIGH_SCORE = "high_score"
     }
+
+
+
+
+
+
+
 
 }
