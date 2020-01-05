@@ -52,6 +52,11 @@ class panel_glowny : AppCompatActivity() {
                 ), REQUEST_CODE
             )
         }
+        val fr = findViewById<Button>(R.id.FIREbutton)
+        fr.setOnClickListener {
+            startActivityForResult(Intent(applicationContext, Firebasee::class.java), REQUEST_CODE)
+        }
+
         val startQuiz = findViewById<Button>(R.id.pierwszyButton)
         startQuiz.setOnClickListener {
             startActivityForResult(Intent(applicationContext, MainQuiz::class.java), REQUEST_CODE)

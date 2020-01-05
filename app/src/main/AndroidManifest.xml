@@ -30,6 +30,9 @@
             android:name=".bluetoothh"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".Firebasee"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".MainQuiz"
             android:screenOrientation="portrait" />
         <activity
